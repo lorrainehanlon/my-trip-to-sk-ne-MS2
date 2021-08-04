@@ -19,13 +19,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="#">My Trip to Skåne</a>
+        <a class="navbar-brand">My Trip to Skåne</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">FAQ</a></li>
+          <li><a href="#faq">FAQ</a></li>
           
-          <li><a href="#">Create a plan</a></li>
+          <li><a href="#createaplan">Create a plan</a></li>
         </ul>
       </div>
     </div>
@@ -36,7 +36,7 @@
     <h1 class="margin">You're coming to Skåne, what next?</h1>
     <p>You have decided to take a trip to Sweden's southernmost county. But with so much to see and do, it can be hard to know where to start! Luckily we are here to help you with practical information and a handy tool to help you plan your trip.</p>
     <img src="assets/images/Malmo.jpg" class="img-responsive" style="display:inline" alt="Three people walking on a street in Malmö" width="100%" height="auto">
-
+  <section id = "faq">
     <h2>Frequently Asked Questions</h2>
 
     <h3>How do I get there?</h3>
@@ -50,13 +50,14 @@
       <p>Skåne really has something for everyone - history, architecture and nightlife in cities like Malmö and Lund, beautiful countryside perfect for hiking and camping, and sandy coastlines. Skåne is child friendly with lots of activities for children. And for the foodies out there, Skåne is known for it's excellent food scene and local produce.</p>
     <h3>What is the currency in Sweden?</h3>
     <p>The currency is Swedish Kronor. However Sweden has become more or less a cashless society. Most people pay by card and many shops, cafes and restaurants now only accept card or mobile payments.</p>
-
+  </section>
   </div
   
   <!-- Second Container -->
   <div class="container-fluid bg-2 text-center">
+    <section id = "createaplan">
     <h3 class="margin">Create a plan</h3>
-    <p>By answering a few questions about yourself and your interests, we will give you a plan with places to stay, things to see and activities to suit you</p>
+    <p>By answering a few questions about yourself and your interests, we will give you a plan with places to stay, things to see and activities to suit you. </p>
     <form>
         <div class="form-group">
           <label for="exampleInputEmail1">When will you travel?</label>
@@ -85,7 +86,7 @@
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-    
+    </section>
   </div>
   
   
@@ -98,5 +99,7 @@
   </footer>
   
     <script src="assets/js/script.js"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7gj0JremHOtdoLV2NExcuku4zxIOy5jI&callback=initMap&libraries=places&v=weekly&map_ids=8d193001f940fde3" async></script>
 </body>
 </html>
