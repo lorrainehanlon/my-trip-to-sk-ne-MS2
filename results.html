@@ -11,15 +11,15 @@
   </head>
   <body>
 
-    <!-- <header> -->
-      <!-- <nav class="navbar navbar-default"> -->
+    <header> -->
+      <nav class="navbar navbar-default">
         <div class="container">
             <div class="row">
               <div class="col col-lg-4">
                 <a class="navbar-brand">My Trip to Skåne</a>
               </div>
               <div class="col-lg-4">
-                <label for="activities">Choose an activity:</label>
+                <label class="activity-label" for="activities">Choose an activity:</label>
                 <select name="activities" id="activity" onchange="initMap(this.value)">
                   <option value="store">Shopping</option>
                   <option value="restaurant">Restaurants</option>
@@ -32,16 +32,10 @@
               </div>
             </div>
         </div>
-      <!-- </nav>  -->
-    <!-- </header> -->
+      </nav>
+    </header>
     
-    <!-- <label for="activities">Choose an activity:</label>
-  <select name="activities" id="activity" onchange="initMap(this.value)">
-    <option value="store">Shopping</option>
-    <option value="pharmacy">pharmacy</option>
-    <option value="bakery">bakery</option>
-    <option value="park">Parks</option>
-  </select> -->
+    
 
     <div id="container">
       <div id="map"></div>
