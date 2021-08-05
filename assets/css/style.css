@@ -28,6 +28,11 @@ p {font-size: 16px;}
     padding-top: 70px;
     padding-bottom: 70px;
   }
+
+  .activity-label {
+    color: #555555 ;
+  }
+  
   .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -51,9 +56,7 @@ p {font-size: 16px;}
     display: flex;
   }
 
-  label {
-    color: #555555 !important;
-  }
+  
 
 #sidebar {
   flex-basis: 5rem;

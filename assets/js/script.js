@@ -1,4 +1,11 @@
-function initMap() {
+function initMap(activity) {
+
+	console.log(typeof activity);
+  if(typeof activity === "undefined"){
+  	activity = "cafe";
+  }
+ 
+
     // Create the map.
     const pyrmont = { lat: 55.9903, lng: 13.5958 };
     const map = new google.maps.Map(document.getElementById("map"), {
