@@ -1,9 +1,9 @@
 function initMap() {
     // Create the map.
-    const pyrmont = { lat: -33.866, lng: 151.196 };
+    const pyrmont = { lat: 55.9903, lng: 13.5958 };
     const map = new google.maps.Map(document.getElementById("map"), {
       center: pyrmont,
-      zoom: 17,
+      zoom: 8.5,
       mapId: "8d193001f940fde3",
     });
     // Create the places service.
@@ -20,7 +20,7 @@ function initMap() {
     };
     // Perform a nearby search.
     service.nearbySearch(
-      { location: pyrmont, radius: 500, type: "store" },
+      { location: pyrmont, radius: 500, type: "shops" },
       (results, status, pagination) => {
         if (status !== "OK" || !results) return;
         addPlaces(results, map);
