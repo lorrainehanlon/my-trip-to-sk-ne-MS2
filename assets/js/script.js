@@ -4,6 +4,24 @@ function initMap(activity) {
   if(typeof activity === "undefined"){
   	activity = "cafe";
   }
+  console.log(activity);
+
+  function activityResult() {
+display.results
+  }
+
+    if(typeof place === "Shopping"){
+      places ="store"
+    }
+    else if(typeof place === "Restaurants"){
+      places ="restaurant"
+    }
+    else if(typeof place === "Museums"){
+      places ="museum"
+    }
+    else if(typeof place === "Parks"){
+      places ="park"
+    }
  
 
     // Create the map.

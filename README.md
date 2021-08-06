@@ -67,7 +67,6 @@ The footer contains site copyright information.
 * HTML
 * CSS
 * Bootstrap - started with basic bootstrap template from W3Schools and adjusted to it meet my site vision. Also used snippets from Bootstrap and W3Schools such as modal and form.
-* TinyPNG - for compressing images
 * Gitpod - used as development environment and for version control
 * Github - used to host my code to was created in Gitpod
 * Balsamiq- used to create wireframes for desktop, tablet and mobile

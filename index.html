@@ -65,7 +65,9 @@
       <p>The currency is Swedish Kronor. However Sweden has become more or less a cashless society. Most people pay by
         card and many shops, cafes and restaurants now only accept card or mobile payments.</p>
     </section>
-  </div <!-- Second Container -->
+  </div>
+  
+  <!-- Second Container -->
   <div class="container-fluid bg-2 text-center">
     <section id="createaplan">
       <h3 class="margin">Create a plan</h3>
@@ -81,20 +83,20 @@
       <form>
         <div class="form-row">
           <div class="col">
-            <label for="when">First Name</label>
+            <label>First Name</label>
             <input type="text" id="firstname" class="form-control" placeholder="First name">
           </div>
           <div class="col">
-            <label for="when">Last Name</label>
+            <label>Last Name</label>
             <input type="text" class="form-control" placeholder="Last name">
           </div>
         </div>
         <div class="form-group">
-          <label for="inputEmail">Email Address</label>
+          <label>Email Address</label>
           <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
         </div>
         <div class="form-group">
-          <label for="when">When will you travel?</label>
+          <label>When will you travel?</label>
           <select class="form-control">
             <option>Spring</option>
             <option>Summmer</option>
@@ -103,7 +105,7 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="who">Who will you travel with?</label>
+          <label>Who will you travel with?</label>
           <select class="form-control">
             <option>Solo trip</option>
             <option>With children</option>
@@ -111,7 +113,7 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="reason">What is the main reason for your trip?</label>
+          <label>What is the main reason for your trip?</label>
           <select class="form-control">
             <option>To enjoy activities</option>
             <option>To relax</option>
@@ -119,19 +121,29 @@
           </select>
         </div>
 
-        <!-- Modal snippet adapted from W3 Schools-->
-        <button id="myBtn">Submit</button>
-        
-        <div id="myModal" class="modal">
-
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
+        <div class="col-flex">
+          <div class="modal" id="modal1" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Rosie</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Thank you for submitting your information! You will soon receive an email with a list of
+                    personalised recommendations based on your personal preferences.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
           </div>
-
+          <button id="submit" data-target="#modal1" data-toggle="modal">Submit</button>
         </div>
-        
+
       </form>
     </section>
   </div>
