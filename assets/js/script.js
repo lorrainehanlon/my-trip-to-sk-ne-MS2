@@ -87,7 +87,7 @@ document.getElementById("myBtn").addEventListener("click", handleSubmit);
 
 
 // Get the modal
-var modal = document.getElementById("submit");
+var modal = document.getElementById("myBtn");
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
@@ -111,3 +111,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
+document.getElementById("myBtn").addEventListener("click", openModal);

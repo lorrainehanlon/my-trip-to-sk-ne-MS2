@@ -1,104 +1,142 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# My Trip to Skåne
 
-Welcome lorrainehanlon,
+## Milestone Project 2 - Interactive Frontend Development
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+[Visit my website.](https://lorrainehanlon.github.io/my-trip-to-sk-ne-MS2/)
 
-## Gitpod Reminders
+The brief is to build an interactive front-end site using HTML and CSS and Javascript, based on the principles of UX design. This website is for the purposes of this project only.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## UX
 
-`python3 -m http.server`
+### Project Goals
+The goal of this site is to help someone who has already decided they want to come to Skåne. THe idea comes from a real world example as I am Irish and moved to Malmö in Skåne over two years ago. I have had different family memebers and friends visit and needed to look for things to do with them, one time it was a couple, another time my brother with his wife and three children.The website aims to give some more information about Skåne and allow the user to request a plan of activities based on their circumstances and interests. It also aims to inspire them by alowwing them to click on an activity type and see a list of suggestions and their locations on the map.  
 
-A blue button should appear to click: _Make Public_,
+### User Stories
 
-Another blue button should appear to click: _Open Browser_.
+1. As a first time visiter to Skåne, I want to learn a bit more about it.
+2. As someone who has already decided to come to Skåne, I want to get an idea of what activities are available and where they are located.
+3. As someone who has already decided to come to Skåne but does not have time to research it, I want a personalised list of possible activities based on my circumstances and preferences.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+### Design
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### Typography
+I have chosen Montserrat as a clear informative font while also being pleasant to the eye, this site aims to allow the user to quickly take in the information and move to the area of the site they require. 
 
-To log into the Heroku toolbelt CLI:
+#### Colour scheme
+I wanted the colours to be interesting but not take away from the text content and to match with the colours used in the main image. The white text on green background for FAQ is subtle but still easily read. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+#### Imagery
+I chose to have a one hero image of friends walking down a street in Malmö, with bars and cafes in the background. The light is golden, like late summer or early Autumn. The image is inviting and invites the user to think about where those people are going and what they are are planning to do. That should lead the user to think about what they would like to do when they visit Skåne. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Wireframes
+I created 3 wireframes to display the responsive design of my site.
 
-------
+Desktop Wireframe homepage
 
-## Release History
+![alt text](assets/images/readme/desktop.PNG) 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Desktop Wireframe for results page
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![alt text](assets/images/readme/Map.PNG) 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+Tablet Wireframe
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![alt text](assets/images/readme/tablet.PNG) 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+Mobile Wireframe
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+![alt text](assets/images/readme/iphone.PNG) 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Features
+I decided to create a two page website with 3. The homepage is the most detailed. It includes and introduction with hero image, a section for FAQs and a section called Create a Plan. The layout leads the user through the site in a logical manner, from the introduction, to more information about Skåne and then the opportunity for them to input what kind of activities they are interested in and would like more information on. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+From the Create a Plan section the user can submit information to have a personalised set of recommendations emailed to them. They can also select one of the activites listed which will lead them to the results page, which shows a list of results for the selected activity along side a map showing their location. From this page they have the option to choose a different activity from the dropdown and an option to return to the main page.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The homepage follows structured layout starting with a header with navbar allowing them to navigate easily to different parts of the site. The navbar includes links to the two main sections. Below the navbar is a shot introduction to the site and an inviting image from Skåne.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+The FAQ section quickly gives the user some basic important information that is useful to know before they come to Skåne.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The Create a Plan section gives the user an opportunity to choose from four different activities and be directed to a results page showing them a list of recommendations for the shosen activity and see where they are located on the map. The second part of the Create a Plan section includes a form whwere the user can submit information about themselves and their interests. This is shown for the purposes of the project with a personalised modal confirming receipt of their information and that an email with personalised recommendations will be sent. This could be developed in future to complete the actual email function.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+The footer contains site copyright information. 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## Technologies used
+* HTML
+* CSS
+* Bootstrap - started with basic bootstrap template from W3Schools and adjusted to it meet my site vision. Also used snippets from Bootstrap and W3Schools such as modal and form.
+* TinyPNG - for compressing images
+* Gitpod - used as development environment and for version control
+* Github - used to host my code to was created in Gitpod
+* Balsamiq- used to create wireframes for desktop, tablet and mobile
+* Chrome Developer Tools - used throughout to assess responsiveness and to help with styling
+* Google Fonts to assign font to my site
+* Free Formatter to beautify CSS
+* Minify Code to beautify HTML
+* W3C CSS Validation Service to validate CSS code
+* W3C HTML Validation Service to validate HTML code
+* Lighthouse in Developer Tools to evaluate performance and accessibility
 
-------
 
-## FAQ about the uptime script
+## Testing
 
-**Why have you added this script?**
+### UX stories testing
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+1. As a first time visiter to Skåne, I want to learn a bit more about it.
+* The site guides the user logically and progressively through information about Skåne. From a general introduction to FAQs with good to know information and on to suggestions of activites to do and the opportunity to request more personalised information.
+2. As someone who has already decided to come to Skåne, I want to get an idea of what activities are available and where they are located.
+* In the Create a Plan section the user has two different opportunities to find out what activities are available. They can click on one of the suggested activities to see a list of results for their choice and a map showing the locations. From the results page they can select different activities from a dropdown to get more recommendations. 
+3. As someone who has already decided to come to Skåne but does not have time to research it, I want a personalised list of possible activities based on my circumstances and preferences.
+* in the Create a Plan section the user can also fill in the form to receive an email with personalised recommadations of activities they could do along with locations.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Validation
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+1. I used W3C CSS Validation Service to validate my CSS code
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+CSS Validation Results
 
-**So….?**
+![alt text](assets/images/readme/CSSvalidator.PNG) 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+2. I used W3C HTML Validation Service to validate my HTML code 
 
-**Can I opt out?**
+HTML Validation Results
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![alt text](assets/images/readme/HTMLvalidator.png) 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+3. I used Lighthouse in Developer Tools to evaluate the performance and accessibility of my site
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Lighthouse Performance Results
 
----
+![alt text](assets/images/readme/lighthouse.PNG) 
 
-Happy coding!
+## Deployment
+
+My site is hosted using GitHub, deployed directly from the master branch. 
+
+To run locally, you can clone this repository directly into the editor of your choice by pasting git clone into your terminal. 
+
+To deploy my website I completed the following steps:
+
+1. I clicked on the Settings tab in my GitHub repository.
+
+
+2. I selected Pages from the sidebar menu and chose the Master branch as the source to enable GitHub Pages.
+
+
+3. I then clicked Save and the URL to the live site was generated.
+
+4. I then followed the link to observe and verify the published GitHub page. 
+
+
+## Credits 
+
+### Content
+Text content all original by me with some of the basic information found on the Visit Skåne website - visitskane.com. 
+
+### Media
+Main image from Visit Skåne website - visitskane.com.
+
