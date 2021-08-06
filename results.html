@@ -1,61 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Results</title>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/script.js"></script>
-  </head>
-  <body>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/script.js"></script>
+</head>
 
-    <header> -->
-      <!-- Navbar -->
-      <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="row">
-              <div class="col col-lg-4">
-                <a class="navbar-brand">My Trip to Skåne</a>
-              </div>
-              <div class="col-lg-4">
-                <label class="activity-label" for="activities">Choose an activity:</label>
-                <select name="activities" id="activity" onchange="initMap(this.value)">
-                  <option value="store">Shopping</option>
-                  <option value="restaurant">Restaurants</option>
-                  <option value="museum">Museums</option>
-                  <option value="park">Parks</option>
-                </select>
-              </div>
-              <div class="col col-lg-4">
-                <a href="index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Return to main page</a>
-              </div>
-            </div>
+<body>
+
+  <header> -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-4">
+            <a class="navbar-brand">My Trip to Skåne</a>
+          </div>
+          <div class="col-lg-4">
+            <label class="activity-label" for="activities">Choose an activity:</label>
+            <select name="activities" id="activity" onchange="initMap(this.value)">
+              <option value="store">Shopping</option>
+              <option value="restaurant">Restaurants</option>
+              <option value="museum">Museums</option>
+              <option value="park">Parks</option>
+            </select>
+          </div>
+          <div class="col col-lg-4">
+            <a href="index.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Return to main
+              page</a>
+          </div>
         </div>
-      </nav>
-    </header>
-    
-    
-    <!-- Map and results -->
-    <div id="container">
-      <div id="map"></div>
-      <div id="sidebar">
-        <h2>Results</h2>
-        <ul id="places"></ul>
-        <button id="more">Load more results</button>
       </div>
+    </nav>
+  </header>
+
+
+  <!-- Map and results -->
+  <div id="container">
+    <div id="map"></div>
+    <div id="sidebar">
+      <h2>Results</h2>
+      <ul id="places"></ul>
+      <button id="more">Load more results</button>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="container-fluid bg-4 text-center">
-      <p> © Lorraine Hanlon 2021</p>
-    </footer>
+  <!-- Footer -->
+  <footer class="container-fluid bg-4 text-center">
+    <p> © Lorraine Hanlon 2021</p>
+  </footer>
 
-    
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7gj0JremHOtdoLV2NExcuku4zxIOy5jI&callback=initMap&libraries=places&v=weekly&map_ids=8d193001f940fde3"
-      async
-    ></script>
-  </body>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7gj0JremHOtdoLV2NExcuku4zxIOy5jI&callback=initMap&libraries=places&v=weekly&map_ids=8d193001f940fde3"
+    async></script>
+</body>
+
 </html>

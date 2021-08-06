@@ -1,3 +1,5 @@
+//map snippets taken from Google Places API documentation
+
 function initMap(activity) {
 
 	console.log(typeof activity);
@@ -5,22 +7,25 @@ function initMap(activity) {
   	activity = "cafe";
   }
   console.log(activity);
+  
 
   function activityResult() {
-display.results
+display.results;
+
   }
 
-    if(typeof place === "Shopping"){
-      places ="store"
+    if(typeof place === "store"){
+      places ="store";
+      console.log(store);
     }
     else if(typeof place === "Restaurants"){
-      places ="restaurant"
+      places ="restaurant";
     }
     else if(typeof place === "Museums"){
-      places ="museum"
+      places ="museum";
     }
     else if(typeof place === "Parks"){
-      places ="park"
+      places ="park";
     }
  
 
@@ -89,46 +94,6 @@ display.results
     }
   }
 
-  function handleSubmit(event) {
-    // Prevent the default submit action 
-    event.preventDefault();
-
-    // Get input elements
-    let firstname = document.getElementById('firstname');
-    
-
-    // Log values to the console
-    console.log('firstname', firstname.value);
-   
-}
-document.getElementById("myBtn").addEventListener("click", handleSubmit);
+ 
 
 
-// Get the modal
-var modal = document.getElementById("myBtn");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-
-document.getElementById("myBtn").addEventListener("click", openModal);

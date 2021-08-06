@@ -76,6 +76,7 @@ The footer contains site copyright information.
 * Minify Code to beautify HTML
 * W3C CSS Validation Service to validate CSS code
 * W3C HTML Validation Service to validate HTML code
+* JShints Validation for JavaScript
 * Lighthouse in Developer Tools to evaluate performance and accessibility
 
 
@@ -97,13 +98,13 @@ The footer contains site copyright information.
 
 CSS Validation Results
 
-![alt text](assets/images/readme/CSSvalidator.PNG) 
+![alt text](assets/images/readme/cssvalidator.PNG) 
 
 2. I used W3C HTML Validation Service to validate my HTML code 
 
 HTML Validation Results
 
-![alt text](assets/images/readme/HTMLvalidator.png) 
+![alt text](assets/images/readme/htmlvalidator.png) 
 
 
 3. I used Lighthouse in Developer Tools to evaluate the performance and accessibility of my site
