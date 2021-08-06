@@ -86,10 +86,15 @@ The footer contains site copyright information.
 
 1. As a first time visiter to Skåne, I want to learn a bit more about it.
 * The site guides the user logically and progressively through information about Skåne. From a general introduction to FAQs with good to know information and on to suggestions of activites to do and the opportunity to request more personalised information.
+![alt text](assets/images/readme/Intro.PNG)
+![alt text](assets/images/readme/FAQs.PNG)
 2. As someone who has already decided to come to Skåne, I want to get an idea of what activities are available and where they are located.
-* In the Create a Plan section the user has two different opportunities to find out what activities are available. They can click on one of the suggested activities to see a list of results for their choice and a map showing the locations. From the results page they can select different activities from a dropdown to get more recommendations. 
+* In the Create a Plan section the user has two different opportunities to find out what activities are available. They can click on one of the suggested activities to see a list of results for their choice and a map showing the locations. From the results page they can select different activities from a dropdown to get more recommendations.
+![alt text](assets/images/readme/selectActivity.PNG) 
+![alt text](assets/images/readme/results.PNG)
 3. As someone who has already decided to come to Skåne but does not have time to research it, I want a personalised list of possible activities based on my circumstances and preferences.
 * in the Create a Plan section the user can also fill in the form to receive an email with personalised recommadations of activities they could do along with locations.
+![alt text](assets/images/readme/form.PNG)
 
 
 ### Validation
